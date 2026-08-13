@@ -1,0 +1,41 @@
+{
+  "name": "should-i-render",
+  "version": "0.1.0",
+  "description": "A measured React component fit index for coding agents, served as a bundled-data MCP server.",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "should-i-render": "server.js"
+  },
+  "files": [
+    "server.js",
+    "tools.js",
+    "data.js",
+    "clamp.js",
+    "data/components.json",
+    "data/LICENSE",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "react",
+    "components",
+    "design-system",
+    "accessibility"
+  ],
+  "author": "Keyoor (https://mrkeyoor.com/author/keyoor/)",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "mcpName": "io.github.mrkeyoor/should-i-render"
+}

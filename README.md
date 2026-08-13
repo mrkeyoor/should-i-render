@@ -1,0 +1,60 @@
+# should-i-render
+
+`should-i-render` is a read-only MCP server for choosing React components from a measured, curated snapshot. It answers component-fit questions with terse verdicts and harness facts instead of returning source dumps.
+
+The bundled snapshot currently contains the published should-i-render index. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
+
+## Local use
+
+```json
+{
+  "mcpServers": {
+    "should-i-render": {
+      "command": "node",
+      "args": ["/path/to/should-i-render/server.js"]
+    }
+  }
+}
+```
+
+Node 20 or newer is required. Run `npm test` to verify the bundled snapshot, tool metadata, structured responses, and response cap.
+
+## Tools
+
+- `find_component({task, pattern?, style?})` ranks up to three fits over the component prose, pattern, style, and measured results.
+- `check_component({name})` returns the full verdict, skip conditions, and measured strip.
+- `alternatives({name})` ranks same-pattern candidates.
+- `install_plan({name})` returns dependencies, bare-harness gaps, provider requirements, setup notes, license, and author credit.
+- `skip_list({pattern, style?})` puts explicit failure warnings and the worst measured offenders first.
+
+Every tool includes a title, read-only annotations, an output schema, and structured content alongside the clamped text response.
+
+## What the measured strip means
+
+`RENDERS` is the prepared harness mount result. `A11Y` is the sum of recorded axe violations. `KB` is the marginal gzip bundle size over the harness baseline. `BARE` is a second build-and-mount pass without the prepared shadcn-style helpers. `PROVIDER` means a missing-provider mount error was measured.
+
+## The style axis
+
+Pattern and style answer different questions. A pattern is what the component does, such as button, calendar, carousel, or text reveal. A style is the visual world it belongs to, such as minimal-flat, brutalism, spatial, bento, or dark-futuristic. Filtering by both is useful when the interaction is fixed but the product language is not.
+
+Styles are editorial classifications, not package capabilities. Two entries with the same pattern and style can still differ sharply in dependencies, accessibility findings, bundle cost, bare compatibility, and provider requirements.
+
+## Data
+
+`data/components.json` is a point-in-time export of published component records. It contains prose, measured results, source and author credit, license metadata, pattern and style, and relative preview paths. It does not contain preview image or video bytes.
+
+Set `SHOULD_I_RENDER_DATA=/path/to/components.json` to test another snapshot with the same shape.
+
+## Limitations
+
+- The harness currently measures React components only.
+- Coverage is curated rather than an exhaustive registry crawl.
+- The snapshot is point-in-time; upstream component APIs and dependencies can change after export.
+- Harness results are controlled measurements, not production QA. They do not replace browser, design-system, accessibility, security, or user testing in your app.
+- Demos are written against each component's source API and drive the screenshots. A demo can cover the intended state without covering every prop, interaction, server behavior, or data-loading path.
+- A clean accessibility count means the recorded demo had no axe findings in this harness. It is not an accessibility certification.
+- Verdicts and style labels are editorial judgment grounded in the recorded measurements and source APIs.
+
+## License
+
+Server code is MIT licensed. The compiled index metadata is CC BY 4.0 with attribution to mrkeyoor.com; individual component source projects retain their own licenses and author credit.

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T09:47:24.593Z",
-  "count": 35,
-  "variantCount": 155,
+  "generatedAt": "2026-08-18T10:34:58.746Z",
+  "count": 41,
+  "variantCount": 185,
   "categories": {
-    "base": 8,
+    "base": 14,
     "style": 15,
     "industry": 12
   },
@@ -123,6 +123,88 @@
       }
     },
     {
+      "id": "ai-workspace-01",
+      "name": "Ai Workspace",
+      "title": "Aperture · Collaborative AI workspace",
+      "description": "Aperture is a dark collaborative AI workspace template with conversation history, a model selector, source-aware answers, prompt suggestions, file context, adjustable reasoning controls, a working composer, and responsive panels for product teams.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "ai",
+        "workspace"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/ai-workspace-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/ai-workspace-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/ai-workspace-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/ai-workspace-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/ai-workspace-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:30:16.328Z"
+      }
+    },
+    {
       "id": "app-landing-01",
       "name": "App Landing",
       "title": "Petal - Tiny habits, beautifully kept",
@@ -205,6 +287,88 @@
       }
     },
     {
+      "id": "blog-magazine-01",
+      "name": "Blog Magazine",
+      "title": "Relay Review · Independent culture magazine",
+      "description": "Relay Review is a typography-led magazine and newsletter template with an issue masthead, category filters, featured reporting, article cards, reading-time metadata, a working newsletter state, a trending rail, and responsive editorial hierarchy.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "blog",
+        "magazine"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/blog-magazine-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/blog-magazine-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/blog-magazine-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/blog-magazine-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/blog-magazine-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:33:07.752Z"
+      }
+    },
+    {
       "id": "docs-01",
       "name": "Docs",
       "title": "Gridnote Docs - Ship Knowledge in Sync",
@@ -262,6 +426,170 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T09:43:32.921Z"
+      }
+    },
+    {
+      "id": "event-conference-01",
+      "name": "Event Conference",
+      "title": "Common Ground · Design and technology conference",
+      "description": "Common Ground is a bold conference template with ticket conversion, day-by-day schedule controls, accessible session cards, speaker profiles, venue information, live capacity states, sponsor space, and a responsive visual system for a three-day event.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "event",
+        "conference"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/event-conference-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/event-conference-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/event-conference-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/event-conference-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/event-conference-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/event-conference-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/event-conference-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/event-conference-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/event-conference-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/event-conference-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:33:07.752Z"
+      }
+    },
+    {
+      "id": "job-board-01",
+      "name": "Job Board",
+      "title": "Practice · Curated jobs for thoughtful teams",
+      "description": "Practice is a focused job-board template with keyword and location search, role-type filters, saved jobs, selectable listings, salary and workplace metadata, a detailed role panel, employer trust signals, and a responsive application journey.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "job",
+        "board"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/job-board-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/job-board-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/job-board-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/job-board-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/job-board-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/job-board-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/job-board-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/job-board-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/job-board-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/job-board-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:33:07.752Z"
       }
     },
     {
@@ -428,6 +756,87 @@
       }
     },
     {
+      "id": "marketplace-01",
+      "name": "Marketplace",
+      "title": "Foundry Market · Independent objects marketplace",
+      "description": "Foundry Market is a warm editorial marketplace template with live search, category filters, saved products, price and maker metadata, a featured collection, trust notes, responsive product cards, and conversion-focused browsing without visual clutter.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "marketplace"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/marketplace-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/marketplace-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/marketplace-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/marketplace-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/marketplace-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/marketplace-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/marketplace-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/marketplace-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/marketplace-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/marketplace-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:30:16.328Z"
+      }
+    },
+    {
       "id": "portfolio-01",
       "name": "Portfolio",
       "title": "Mira Vale - Independent Designer",
@@ -455,6 +864,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T09:43:32.921Z"
+      }
+    },
+    {
+      "id": "saas-dashboard-01",
+      "name": "Saas Dashboard",
+      "title": "Northstar · SaaS operations dashboard",
+      "description": "Northstar is a complete responsive SaaS dashboard template with a collapsible navigation rail, date-range controls, KPI cards, a CSS revenue chart, project health, an actionable task table, team activity, billing links, and keyboard-visible controls.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "saas",
+        "dashboard"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/saas-dashboard-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/saas-dashboard-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/saas-dashboard-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/saas-dashboard-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/saas-dashboard-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:30:16.328Z"
       }
     },
     {

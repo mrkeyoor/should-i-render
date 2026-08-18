@@ -1,0 +1,122 @@
+[
+  {
+    "name": "aurora-terminal",
+    "colors": { "accent": "#58F5B5", "surface": "#08120F", "text": "#E8FFF4", "muted": "#88A99C" },
+    "tags": ["dark", "neon", "cold"]
+  },
+  {
+    "name": "ember-console",
+    "colors": { "accent": "#FF7A45", "surface": "#17100D", "text": "#FFF4E8", "muted": "#BFA391" },
+    "tags": ["dark", "warm"]
+  },
+  {
+    "name": "midnight-lilac",
+    "colors": { "accent": "#A88BFF", "surface": "#111027", "text": "#F4F1FF", "muted": "#9C98BC" },
+    "tags": ["dark", "cold"]
+  },
+  {
+    "name": "ocean-signal",
+    "colors": { "accent": "#35C8FF", "surface": "#071621", "text": "#EAF9FF", "muted": "#86A9B8" },
+    "tags": ["dark", "neon", "cold"]
+  },
+  {
+    "name": "rose-noir",
+    "colors": { "accent": "#FF6FAE", "surface": "#190F16", "text": "#FFF1F7", "muted": "#BD93A6" },
+    "tags": ["dark", "warm"]
+  },
+  {
+    "name": "graphite-lime",
+    "colors": { "accent": "#C6F36B", "surface": "#111315", "text": "#F4F6F2", "muted": "#9BA39A" },
+    "tags": ["dark", "neon", "mono"]
+  },
+  {
+    "name": "paper-coral",
+    "colors": { "accent": "#E85D4A", "surface": "#FFF7F1", "text": "#34231F", "muted": "#775F57" },
+    "tags": ["light", "warm"]
+  },
+  {
+    "name": "linen-sage",
+    "colors": { "accent": "#5D8D70", "surface": "#F4F1E8", "text": "#26352D", "muted": "#65756C" },
+    "tags": ["light", "earth"]
+  },
+  {
+    "name": "glacier-blue",
+    "colors": { "accent": "#287EA8", "surface": "#F3F8FC", "text": "#1D3342", "muted": "#607886" },
+    "tags": ["light", "cold"]
+  },
+  {
+    "name": "butter-ink",
+    "colors": { "accent": "#D45D3B", "surface": "#FFF4C7", "text": "#30291C", "muted": "#76694A" },
+    "tags": ["light", "retro", "warm"]
+  },
+  {
+    "name": "blush-plum",
+    "colors": { "accent": "#B84E7E", "surface": "#FFF0F5", "text": "#422338", "muted": "#7B5B6D" },
+    "tags": ["light", "pastel", "warm"]
+  },
+  {
+    "name": "mint-ledger",
+    "colors": { "accent": "#238E64", "surface": "#EAFBF3", "text": "#17372A", "muted": "#557568" },
+    "tags": ["light", "pastel", "cold"]
+  },
+  {
+    "name": "lavender-note",
+    "colors": { "accent": "#7D5ABE", "surface": "#F5F0FF", "text": "#32264C", "muted": "#6D6380" },
+    "tags": ["light", "pastel", "cold"]
+  },
+  {
+    "name": "apricot-studio",
+    "colors": { "accent": "#C85E36", "surface": "#FFF1DF", "text": "#402B20", "muted": "#7C6759" },
+    "tags": ["light", "pastel", "warm"]
+  },
+  {
+    "name": "sand-and-cedar",
+    "colors": { "accent": "#9A5E34", "surface": "#EDE2CF", "text": "#30291F", "muted": "#706353" },
+    "tags": ["light", "earth", "retro", "warm"]
+  },
+  {
+    "name": "moss-clay",
+    "colors": { "accent": "#91B56A", "surface": "#20271F", "text": "#F0F3E9", "muted": "#A3AD99" },
+    "tags": ["dark", "earth"]
+  },
+  {
+    "name": "canyon-dusk",
+    "colors": { "accent": "#E88657", "surface": "#2A1814", "text": "#FFF0E6", "muted": "#C0A094" },
+    "tags": ["dark", "earth", "warm"]
+  },
+  {
+    "name": "alpine-night",
+    "colors": { "accent": "#69C4A5", "surface": "#101C21", "text": "#EDF8F5", "muted": "#91AAA2" },
+    "tags": ["dark", "earth", "cold"]
+  },
+  {
+    "name": "arcade-sunset",
+    "colors": { "accent": "#FF4F9A", "surface": "#1B1230", "text": "#FFF3D6", "muted": "#B8A1C9" },
+    "tags": ["dark", "neon", "retro", "warm"]
+  },
+  {
+    "name": "cassette-teal",
+    "colors": { "accent": "#F5A742", "surface": "#123033", "text": "#FFF5D8", "muted": "#ACC0B6" },
+    "tags": ["dark", "retro"]
+  },
+  {
+    "name": "soda-pop",
+    "colors": { "accent": "#D23BE7", "surface": "#FDF2FF", "text": "#3B2140", "muted": "#795C7E" },
+    "tags": ["light", "neon", "retro"]
+  },
+  {
+    "name": "mono-paper",
+    "colors": { "accent": "#51544D", "surface": "#F7F7F4", "text": "#242522", "muted": "#6D7069" },
+    "tags": ["light", "mono"]
+  },
+  {
+    "name": "mono-night",
+    "colors": { "accent": "#AEB4B0", "surface": "#121416", "text": "#F2F2EF", "muted": "#949B97" },
+    "tags": ["dark", "mono"]
+  },
+  {
+    "name": "plum-brass",
+    "colors": { "accent": "#D7A84A", "surface": "#241528", "text": "#FFF5E8", "muted": "#B9A4B5" },
+    "tags": ["dark", "retro", "warm"]
+  }
+]

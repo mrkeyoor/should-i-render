@@ -4,6 +4,8 @@
 
 The bundled snapshot currently contains the published should-i-render index. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
 
+The hosted free beta at [vibecodng.com](https://vibecodng.com/#agents) reads the live index and includes 100 tool calls per API key per UTC day. Create a key in the browser, then connect an HTTP-capable MCP client to `https://vibecodng.com/mcp`. Use this npm package when you want a private, offline, versioned snapshot with no quota.
+
 ## Local use
 
 ```json
@@ -19,15 +21,46 @@ The bundled snapshot currently contains the published should-i-render index. It 
 
 Node 20 or newer is required. Run `npm test` to verify the bundled snapshot, tool metadata, structured responses, and response cap.
 
+With npm, no checkout is needed:
+
+```json
+{
+  "mcpServers": {
+    "should-i-render": {
+      "command": "npx",
+      "args": ["-y", "should-i-render@0.1.0"]
+    }
+  }
+}
+```
+
+The hosted service may add paid plans later for fresher data, higher quotas and team workflows. The published offline package remains available under the licenses below.
+
 ## Tools
 
-- `find_component({task, pattern?, style?})` ranks up to three fits over the component prose, pattern, style, and measured results.
+- `find_component({task, pattern?, style?, palette?})` ranks up to three verified, rendering fits over the component prose, pattern, style, and measured results. Failure warnings stay out of recommendations. Pass a palette slug to append its CSS variables.
+- `palette_pick({mood?})` returns one to three curated accessible palettes with hex roles and a copyable CSS-variable block.
 - `check_component({name})` returns the full verdict, skip conditions, and measured strip.
 - `alternatives({name})` ranks same-pattern candidates.
-- `install_plan({name})` returns dependencies, bare-harness gaps, provider requirements, setup notes, license, and author credit.
+- `install_plan({name})` returns dependencies, bare-harness gaps, provider requirements, setup notes, license, author credit, the measured gallery page, the upstream source, and an exact shadcn command when the source supports it.
 - `skip_list({pattern, style?})` puts explicit failure warnings and the worst measured offenders first.
 
 Every tool includes a title, read-only annotations, an output schema, and structured content alongside the clamped text response.
+
+## Palettes
+
+The package bundles 24 original four-color palettes. Each palette defines `accent`, `surface`, `text`, and `muted`; every text-on-surface pair is validated at WCAG AA contrast of 4.5:1 or better. Use `palette_pick` with a palette slug or moods such as `dark`, `light`, `pastel`, `neon`, `retro`, `earth`, `warm`, `cold`, or `mono`.
+
+```css
+:root {
+  --bw-accent: #E85D4A;
+  --bw-surface: #FFF7F1;
+  --bw-text: #34231F;
+  --bw-muted: #775F57;
+}
+```
+
+Automatic theming applies to first-party components; third-party entries need manual mapping.
 
 ## What the measured strip means
 
@@ -41,7 +74,7 @@ Styles are editorial classifications, not package capabilities. Two entries with
 
 ## Data
 
-`data/components.json` is a point-in-time export of published component records. It contains prose, measured results, source and author credit, license metadata, pattern and style, and relative preview paths. It does not contain preview image or video bytes.
+`data/components.json` is a point-in-time export of published component records. It contains prose, measured results, source and author credit, license metadata, pattern and style, and relative preview paths. It does not contain preview image or video bytes. `data/palettes.json` is the bundled palette catalog.
 
 Set `SHOULD_I_RENDER_DATA=/path/to/components.json` to test another snapshot with the same shape.
 

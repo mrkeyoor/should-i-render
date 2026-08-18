@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { allComponents, countComponents } from '../data.js'
+import { allComponents, allPalettes, countComponents } from '../data.js'
 import { clamp, estimateTokens } from '../clamp.js'
 import { TOOLS, listTools, runTool } from '../tools.js'
 
@@ -16,13 +16,19 @@ test('bundled snapshot contains the full measured index', async () => {
 
 test('all tools expose discovery metadata required by MCP clients', () => {
   const definitions = listTools()
-  assert.equal(definitions.length, 5)
+  assert.equal(definitions.length, 6)
   for (const tool of definitions) {
     assert.ok(tool.title)
     assert.equal(tool.annotations.readOnlyHint, true)
     assert.ok(tool.outputSchema)
     assert.equal('handler' in tool, false)
   }
+})
+
+test('bundled palette catalog exposes accessible four-role palettes', async () => {
+  const palettes = await allPalettes()
+  assert.equal(palettes.length, 24)
+  assert.ok(palettes.every((palette) => ['accent', 'surface', 'text', 'muted'].every((role) => /^#[0-9A-F]{6}$/.test(palette.colors[role]))))
 })
 
 async function getFixtures() {
@@ -48,12 +54,52 @@ test('tool functions return structured measured answers', async () => {
     ['alternatives', { name: group[0].name }],
     ['install_plan', { name: first.name }],
     ['skip_list', { pattern: failure.pattern }],
+    ['palette_pick', { mood: 'light' }],
   ]
   for (const [name, args] of calls) {
     const result = await runTool(name, args)
     assert.ok(result.text.length > 0, `${name} returned no text`)
     assert.ok(result.structuredContent, `${name} returned no structuredContent`)
   }
+})
+
+test('find_component never recommends a failed or warning entry as a best fit', async () => {
+  const result = await runTool('find_component', {
+    task: 'responsive pricing table for SaaS with accessible toggle',
+    pattern: 'pricing',
+  })
+  assert.ok(result.structuredContent.matches.length > 0)
+  assert.ok(result.structuredContent.matches.every((match) => match.measured.renders === true))
+  assert.ok(result.structuredContent.matches.every((match) => match.failureWarning === false))
+  assert.doesNotMatch(result.text, /✗RENDERS/)
+})
+
+test('install_plan gives the agent an actionable review and source path', async () => {
+  const components = await allComponents()
+  const component = components.find((candidate) => candidate.sourceUrl) || components[0]
+  const result = await runTool('install_plan', { name: component.name })
+  assert.equal(result.structuredContent.plan.pageUrl, `https://vibecodng.com/components/${component.slug}/`)
+  assert.equal(result.structuredContent.plan.sourceUrl, component.sourceUrl)
+  assert.match(result.text, /Measured review: https:\/\/vibecodng\.com\/components\//)
+  assert.match(result.text, /Source:/)
+})
+
+test('palette_pick returns matching palettes and find_component appends honest theming guidance', async () => {
+  const picked = await runTool('palette_pick', { mood: 'light' })
+  assert.ok(picked.structuredContent.palettes.length >= 1)
+  assert.ok(picked.structuredContent.palettes.length <= 3)
+  assert.ok(picked.structuredContent.palettes.every((palette) => palette.tags.includes('light')))
+  assert.match(picked.text, /--bw-accent:/)
+
+  const { first } = await getFixtures()
+  const result = await runTool('find_component', {
+    task: `${first.pattern} ${first.style}`,
+    pattern: first.pattern,
+    palette: 'paper-coral',
+  })
+  assert.equal(result.structuredContent.palette.name, 'paper-coral')
+  assert.match(result.text, /--bw-surface: #FFF7F1;/)
+  assert.match(result.text, /Automatic theming applies to first-party components; third-party entries need manual mapping\./)
 })
 
 test('every tool stays inside the 500-token text clamp', async () => {
@@ -64,6 +110,7 @@ test('every tool stays inside the 500-token text clamp', async () => {
     alternatives: { name: group[0].name },
     install_plan: { name: first.name },
     skip_list: { pattern: failure.pattern },
+    palette_pick: { mood: 'retro' },
   }
   for (const tool of TOOLS) {
     const result = await runTool(tool.name, args[tool.name])

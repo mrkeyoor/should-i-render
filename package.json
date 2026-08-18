@@ -13,6 +13,7 @@
     "data.js",
     "clamp.js",
     "data/components.json",
+    "data/palettes.json",
     "data/LICENSE",
     "LICENSE",
     "README.md"
@@ -34,6 +35,10 @@
   ],
   "author": "Keyoor (https://mrkeyoor.com/author/keyoor/)",
   "license": "MIT",
+  "homepage": "https://vibecodng.com/#agents",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0"
   },

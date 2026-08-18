@@ -1,4 +1,4 @@
-import { allComponents, findByName } from './data.js'
+import { allComponents, allPalettes, findByName, findPalette } from './data.js'
 import { clamp } from './clamp.js'
 
 const STOPWORDS = new Set([
@@ -12,6 +12,58 @@ const READ_ONLY = {
   destructiveHint: false,
   idempotentHint: true,
   openWorldHint: false,
+}
+
+const PALETTE_NOTE = 'Automatic theming applies to first-party components; third-party entries need manual mapping.'
+const SITE_URL = 'https://vibecodng.com'
+
+function componentPage(component) {
+  return `${SITE_URL}/components/${component.slug}/`
+}
+
+function styleLabel(component) {
+  return component.style || 'unclassified'
+}
+
+function sourceUrl(component) {
+  return component.sourceUrl || component.results?.sourceUrl || null
+}
+
+function installCommand(component) {
+  const url = sourceUrl(component)
+  return url && /\.json(?:[?#].*)?$/i.test(url)
+    ? `npx shadcn@latest add "${url}"`
+    : null
+}
+
+function isVerifiedCandidate(component) {
+  return component.results?.mount?.ok === true && !component.isFailureWarning
+}
+
+export function cssVariables(palette) {
+  const { accent, surface, text, muted } = palette.colors
+  return `:root {\n  --bw-accent: ${accent};\n  --bw-surface: ${surface};\n  --bw-text: ${text};\n  --bw-muted: ${muted};\n}`
+}
+
+function paletteSummary(palette) {
+  return { name: palette.name, colors: palette.colors, tags: palette.tags, cssVariables: cssVariables(palette) }
+}
+
+async function appendPalette(result, paletteName) {
+  if (!paletteName) return result
+  const palette = await findPalette(paletteName)
+  if (!palette) {
+    return {
+      ...result,
+      text: `${result.text}\n\nPalette "${paletteName}" is not in the bundled catalog. Use palette_pick to choose a palette.`,
+      structuredContent: { ...result.structuredContent, palette: null },
+    }
+  }
+  return {
+    ...result,
+    text: `${result.text}\n\nPalette: ${palette.name}\n${cssVariables(palette)}\n${PALETTE_NOTE}`,
+    structuredContent: { ...result.structuredContent, palette: paletteSummary(palette) },
+  }
 }
 
 function tokenize(value) {
@@ -66,6 +118,9 @@ function summary(component) {
     style: component.style,
     verdict: component.prose?.verdict || '',
     measured: measured(component),
+    pageUrl: componentPage(component),
+    sourceUrl: sourceUrl(component),
+    failureWarning: Boolean(component.isFailureWarning),
   }
 }
 
@@ -76,10 +131,10 @@ function quality(component) {
     value.a11y * 20 - (value.marginalKb || 0)
 }
 
-export async function findComponent({ task, pattern, style }) {
+export async function findComponent({ task, pattern, style, palette }) {
   const components = await allComponents({ pattern, style })
   const tokens = tokenize(task)
-  const ranked = components.map((component) => {
+  const ranked = components.filter(isVerifiedCandidate).map((component) => {
     const prose = component.prose || {}
     const proseText = [
       prose.whatIs,
@@ -97,23 +152,62 @@ export async function findComponent({ task, pattern, style }) {
     .slice(0, 3)
 
   if (!ranked.length) {
-    return {
-      text: `No measured component matched "${task}"${pattern ? ` in ${pattern}` : ''}${style ? ` with ${style} style` : ''}. Try a concrete UI pattern or a different style name.`,
-      structuredContent: { query: { task, pattern: pattern || null, style: style || null }, matches: [] },
-    }
+    return appendPalette({
+      text: `No verified, rendering component matched "${task}"${pattern ? ` in ${pattern}` : ''}${style ? ` with ${style} style` : ''}. Try a different pattern or style; use skip_list to inspect rejected candidates.`,
+      structuredContent: { query: { task, pattern: pattern || null, style: style || null, palette: palette || null }, matches: [] },
+    }, palette)
   }
   const lines = [`Best measured fits for: ${task}`]
   for (const { component } of ranked) {
-    lines.push(`\n${component.name} [${component.pattern} / ${component.style}]`)
+    lines.push(`\n${component.name} [${component.pattern} / ${styleLabel(component)}]`)
     lines.push(firstSentence(component.prose?.verdict))
     lines.push(measuredStrip(component))
+    lines.push(`Review: ${componentPage(component)}`)
+  }
+  return appendPalette({
+    text: lines.join('\n'),
+    structuredContent: {
+      query: { task, pattern: pattern || null, style: style || null, palette: palette || null },
+      matches: ranked.map(({ component }) => summary(component)),
+    },
+  }, palette)
+}
+
+export async function palettePick({ mood } = {}) {
+  const palettes = await allPalettes()
+  const target = String(mood || '').trim().toLowerCase()
+  let picks
+
+  const exact = target ? palettes.find((palette) => palette.name === target) : null
+  if (exact) {
+    picks = [exact]
+  } else if (target) {
+    const moodTokens = tokenize(target)
+    picks = palettes.map((palette) => {
+      const score = hits(moodTokens, palette.name) * 4 +
+        moodTokens.reduce((total, token) => total + (palette.tags.includes(token) ? 6 : 0), 0)
+      return { palette, score }
+    }).filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || a.palette.name.localeCompare(b.palette.name))
+      .slice(0, 3)
+      .map(({ palette }) => palette)
+  }
+
+  if (!picks?.length) {
+    const featured = ['paper-coral', 'aurora-terminal', 'sand-and-cedar']
+    picks = featured.map((name) => palettes.find((palette) => palette.name === name)).filter(Boolean)
+  }
+
+  const lines = [target ? `Palette picks for: ${mood}` : 'Versatile palette picks:']
+  for (const palette of picks) {
+    const { accent, surface, text, muted } = palette.colors
+    lines.push(`\n${palette.name} [${palette.tags.join(', ')}]`)
+    lines.push(`accent ${accent} · surface ${surface} · text ${text} · muted ${muted}`)
+    lines.push(cssVariables(palette))
   }
   return {
     text: lines.join('\n'),
-    structuredContent: {
-      query: { task, pattern: pattern || null, style: style || null },
-      matches: ranked.map(({ component }) => summary(component)),
-    },
+    structuredContent: { query: { mood: mood || null }, palettes: picks.map(paletteSummary) },
   }
 }
 
@@ -127,7 +221,7 @@ export async function checkComponent({ name }) {
   }
   const prose = component.prose || {}
   const lines = [
-    `${component.name} [${component.pattern} / ${component.style}]`,
+    `${component.name} [${component.pattern} / ${styleLabel(component)}]`,
     prose.whatIs || '',
     `Verdict: ${prose.verdict || 'No verdict recorded.'}`,
     measuredStrip(component),
@@ -153,12 +247,12 @@ export async function alternatives({ name }) {
     }
   }
   const candidates = (await allComponents({ pattern: component.pattern }))
-    .filter((candidate) => candidate.slug !== component.slug)
+    .filter((candidate) => candidate.slug !== component.slug && isVerifiedCandidate(candidate))
     .sort((a, b) => quality(b) - quality(a) || a.name.localeCompare(b.name))
     .slice(0, 5)
   const lines = [`Alternatives to ${component.name} in ${component.pattern}:`]
   for (const candidate of candidates) {
-    lines.push(`- ${candidate.name} [${candidate.style}]: ${firstSentence(candidate.prose?.verdict)} ${measuredStrip(candidate)}`)
+    lines.push(`- ${candidate.name} [${styleLabel(candidate)}]: ${firstSentence(candidate.prose?.verdict)} ${measuredStrip(candidate)} ${componentPage(candidate)}`)
   }
   if (!candidates.length) lines.push('No same-pattern alternative is in this snapshot.')
   return {
@@ -189,6 +283,8 @@ export async function installPlan({ name }) {
     ? 'The bare harness mounted successfully.'
     : 'The bare harness did not mount. Follow the source-distributed setup notes.'
   const credit = component.authorRepo || component.sourceUrl || 'No author repository recorded.'
+  const registryUrl = sourceUrl(component)
+  const command = installCommand(component)
   const lines = [
     `Install plan for ${component.name}:`,
     `Declared dependencies: ${declared.length ? declared.join(', ') : 'none recorded'}`,
@@ -198,6 +294,9 @@ export async function installPlan({ name }) {
     `Setup notes: ${component.prose?.installNotes || 'No extra setup notes recorded.'}`,
     `License: ${component.license || 'unknown'}${component.licenseUrl ? ` (${component.licenseUrl})` : ''}`,
     `Author credit: ${credit}`,
+    `Measured review: ${componentPage(component)}`,
+    registryUrl ? `Source: ${registryUrl}` : 'Source: not recorded',
+    command ? `Install command: ${command}` : 'Install command: no shadcn registry JSON was recorded; use the source link and author instructions.',
   ]
   return {
     text: lines.join('\n'),
@@ -211,6 +310,9 @@ export async function installPlan({ name }) {
         license: component.license || null,
         licenseUrl: component.licenseUrl || null,
         authorRepo: component.authorRepo || null,
+        pageUrl: componentPage(component),
+        sourceUrl: registryUrl,
+        installCommand: command,
       },
     },
   }
@@ -251,15 +353,26 @@ const summaryArray = { type: 'array', items: { type: 'object', additionalPropert
 export const TOOLS = [
   {
     name: 'find_component', title: 'Find a measured component',
-    description: 'Rank up to three React components for a UI task using prose, pattern, style, and measured harness results.',
+    description: 'Rank up to three verified, rendering React components for a UI task using prose, pattern, style, and measured harness results. Failure warnings are excluded.',
     inputSchema: objectOutput({
       task: { type: 'string', description: 'The UI task or behavior needed.' },
       pattern: { type: 'string', description: 'Optional exact pattern filter.' },
       style: { type: 'string', description: 'Optional exact visual style filter.' },
+      palette: { type: 'string', description: 'Optional exact bundled palette slug to append as CSS variables.' },
     }, ['task']),
-    outputSchema: objectOutput({ query: { type: 'object' }, matches: summaryArray }, ['query', 'matches']),
+    outputSchema: objectOutput({ query: { type: 'object' }, matches: summaryArray, palette: {} }, ['query', 'matches']),
     annotations: READ_ONLY,
     handler: findComponent,
+  },
+  {
+    name: 'palette_pick', title: 'Pick an accessible palette',
+    description: 'Return one to three curated four-color palettes by mood, with hex roles and copyable CSS variables.',
+    inputSchema: objectOutput({
+      mood: { type: 'string', description: 'Optional mood, palette slug, or tags such as dark, pastel, warm, or cold.' },
+    }, []),
+    outputSchema: objectOutput({ query: { type: 'object' }, palettes: { type: 'array', items: { type: 'object', additionalProperties: true } } }, ['query', 'palettes']),
+    annotations: READ_ONLY,
+    handler: palettePick,
   },
   {
     name: 'check_component', title: 'Check one component',
@@ -279,7 +392,7 @@ export const TOOLS = [
   },
   {
     name: 'install_plan', title: 'Plan component installation',
-    description: 'List dependencies, bare-harness gaps, provider requirements, setup notes, license, and author credit.',
+    description: 'List dependencies, bare-harness gaps, provider requirements, setup notes, license, author credit, measured review URL, source URL, and an exact shadcn command when supported.',
     inputSchema: objectOutput({ name: { type: 'string', description: 'Exact component name or slug.' } }, ['name']),
     outputSchema: objectOutput({ query: { type: 'object' }, plan: {} }, ['query', 'plan']),
     annotations: READ_ONLY,

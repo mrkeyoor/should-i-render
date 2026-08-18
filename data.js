@@ -8,8 +8,14 @@ const DEFAULT_PATH = path.join(
   'data',
   'components.json',
 )
+const DEFAULT_PALETTES_PATH = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  'data',
+  'palettes.json',
+)
 
 let cache = null
+let paletteCache = null
 
 function load() {
   if (cache) return cache
@@ -56,4 +62,32 @@ export async function findByName(name) {
 
 export async function countComponents() {
   return load().length
+}
+
+function loadPalettes() {
+  if (paletteCache) return paletteCache
+  let raw
+  try {
+    raw = fs.readFileSync(DEFAULT_PALETTES_PATH, 'utf8')
+  } catch (error) {
+    throw new Error(`cannot read palette data file at ${DEFAULT_PALETTES_PATH}: ${error.message}`)
+  }
+  try {
+    paletteCache = JSON.parse(raw)
+  } catch (error) {
+    throw new Error(`cannot read palette data file at ${DEFAULT_PALETTES_PATH}: invalid JSON (${error.message})`)
+  }
+  if (!Array.isArray(paletteCache)) {
+    throw new Error(`cannot read palette data file at ${DEFAULT_PALETTES_PATH}: expected a JSON array of palettes`)
+  }
+  return paletteCache
+}
+
+export async function allPalettes() {
+  return loadPalettes()
+}
+
+export async function findPalette(name) {
+  const target = slugify(name)
+  return loadPalettes().find((palette) => palette.name === target) || null
 }

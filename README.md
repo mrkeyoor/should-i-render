@@ -32,7 +32,7 @@ With npm, no checkout is needed:
   "mcpServers": {
     "should-i-render": {
       "command": "npx",
-      "args": ["-y", "should-i-render@0.2.2"]
+      "args": ["-y", "should-i-render@0.2.3"]
     }
   }
 }

@@ -13,9 +13,15 @@ const DEFAULT_PALETTES_PATH = path.join(
   'data',
   'palettes.json',
 )
+const DEFAULT_TEMPLATES_PATH = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  'data',
+  'templates.json',
+)
 
 let cache = null
 let paletteCache = null
+let templateCache = null
 
 function load() {
   if (cache) return cache
@@ -90,4 +96,45 @@ export async function allPalettes() {
 export async function findPalette(name) {
   const target = slugify(name)
   return loadPalettes().find((palette) => palette.name === target) || null
+}
+
+function loadTemplates() {
+  if (templateCache) return templateCache
+  let raw
+  try {
+    raw = fs.readFileSync(DEFAULT_TEMPLATES_PATH, 'utf8')
+  } catch (error) {
+    throw new Error(`cannot read template data file at ${DEFAULT_TEMPLATES_PATH}: ${error.message}`)
+  }
+  try {
+    const parsed = JSON.parse(raw)
+    templateCache = parsed.templates
+  } catch (error) {
+    throw new Error(`cannot read template data file at ${DEFAULT_TEMPLATES_PATH}: invalid JSON (${error.message})`)
+  }
+  if (!Array.isArray(templateCache)) {
+    throw new Error(`cannot read template data file at ${DEFAULT_TEMPLATES_PATH}: expected a templates array`)
+  }
+  return templateCache
+}
+
+export async function allTemplates({ category, style } = {}) {
+  const categoryFilter = category ? String(category).toLowerCase() : null
+  const styleFilter = style ? String(style).toLowerCase() : null
+  return loadTemplates().filter((template) =>
+    (!categoryFilter || template.category === categoryFilter) &&
+    (!styleFilter || String(template.style || '').toLowerCase() === styleFilter || template.tags.includes(styleFilter))
+  )
+}
+
+export async function findTemplate(name) {
+  const target = String(name || '').toLowerCase()
+  const slug = slugify(name)
+  return loadTemplates().find((template) =>
+    template.id === slug || String(template.name).toLowerCase() === target
+  ) || null
+}
+
+export async function countTemplates() {
+  return loadTemplates().length
 }

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // should-i-render MCP server. Stdio transport, bundled component snapshot,
-// six read-only tools, and a hard approximate 500-token response clamp.
+// nine read-only tools, and a hard approximate 500-token response clamp.
 import { Server } from '@modelcontextprotocol/sdk/server/index.js'
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js'
 import { listTools, runTool } from './tools.js'
 
 const server = new Server(
-  { name: 'should-i-render', version: '0.1.0' },
+  { name: 'should-i-render', version: '0.2.0' },
   { capabilities: { tools: {} } },
 )
 
@@ -21,7 +21,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       structuredContent: result.structuredContent,
     }
   } catch (error) {
-    const message = /cannot read palette data file/i.test(String(error.message || error))
+    const message = /cannot read template data file/i.test(String(error.message || error))
+      ? 'should-i-render cannot read its bundled template catalog. Reinstall the package.'
+      : /cannot read palette data file/i.test(String(error.message || error))
       ? 'should-i-render cannot read its bundled palette catalog. Reinstall the package.'
       : /cannot read data file/i.test(String(error.message || error))
         ? 'should-i-render cannot read its bundled component snapshot. Reinstall it or set SHOULD_I_RENDER_DATA to a valid components.json.'

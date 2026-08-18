@@ -4,7 +4,7 @@
 [![license: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![measured index](https://img.shields.io/badge/measured%20index-vibecodng.com-2c41f0.svg)](https://vibecodng.com/components/)
 
-`should-i-render` is a read-only MCP server for choosing React components from a measured, curated snapshot. It answers component-fit questions with terse verdicts and harness facts instead of returning source dumps.
+`should-i-render` is a read-only MCP server for choosing measured React components and complete vibecodng page templates from a curated snapshot. It answers fit questions with terse verdicts and practical adoption facts instead of returning source dumps.
 
 The bundled snapshot currently contains the published should-i-render index. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
 
@@ -32,7 +32,7 @@ With npm, no checkout is needed:
   "mcpServers": {
     "should-i-render": {
       "command": "npx",
-      "args": ["-y", "should-i-render@0.1.0"]
+      "args": ["-y", "should-i-render@0.2.0"]
     }
   }
 }
@@ -48,6 +48,9 @@ The hosted service may add paid plans later for fresher data, higher quotas and 
 - `alternatives({name})` ranks same-pattern candidates.
 - `install_plan({name})` returns dependencies, bare-harness gaps, provider requirements, setup notes, license, author credit, the measured gallery page, the upstream source, and an exact shadcn command when the source supports it.
 - `skip_list({pattern, style?})` puts explicit failure warnings and the worst measured offenders first.
+- `find_template({task, category?, style?})` ranks up to three complete page templates and excludes failed audits.
+- `check_template({name})` returns one template's stack, license, audit status, preview, source, download, and palette variants.
+- `template_plan({name, palette?})` returns an exact clone/setup plan and can select a built palette preview.
 
 Every tool includes a title, read-only annotations, an output schema, and structured content alongside the clamped text response.
 
@@ -78,7 +81,7 @@ Styles are editorial classifications, not package capabilities. Two entries with
 
 ## Data
 
-`data/components.json` is a point-in-time export of published component records. It contains prose, measured results, source and author credit, license metadata, pattern and style, and relative preview paths. It does not contain preview image or video bytes. `data/palettes.json` is the bundled palette catalog.
+`data/components.json` is a point-in-time export of published component records. It contains prose, measured results, source and author credit, license metadata, pattern and style, and relative preview paths. It does not contain preview image or video bytes. `data/palettes.json` is the bundled palette catalog, and `data/templates.json` describes the public complete-template library.
 
 Set `SHOULD_I_RENDER_DATA=/path/to/components.json` to test another snapshot with the same shape.
 

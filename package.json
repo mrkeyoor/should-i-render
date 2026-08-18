@@ -1,6 +1,6 @@
 {
   "name": "should-i-render",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A measured React component fit index for coding agents, served as a bundled-data MCP server.",
   "type": "module",
   "main": "server.js",
@@ -14,6 +14,7 @@
     "clamp.js",
     "data/components.json",
     "data/palettes.json",
+    "data/templates.json",
     "data/LICENSE",
     "LICENSE",
     "README.md"

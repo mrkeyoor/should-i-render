@@ -1,4 +1,4 @@
-import { allComponents, allPalettes, findByName, findPalette } from './data.js'
+import { allComponents, allPalettes, allTemplates, findByName, findPalette, findTemplate } from './data.js'
 import { clamp } from './clamp.js'
 
 const STOPWORDS = new Set([
@@ -345,6 +345,112 @@ export async function skipList({ pattern, style }) {
   }
 }
 
+function templateSummary(template) {
+  return {
+    id: template.id,
+    name: template.name,
+    category: template.category,
+    style: template.style,
+    tags: template.tags,
+    description: template.description,
+    previewUrl: template.previewUrl,
+    detailUrl: template.detailUrl,
+    sourceUrl: template.sourceUrl,
+    downloadUrl: template.downloadUrl,
+    cloneCommand: template.cloneCommand,
+    variants: template.variants.map((variant) => variant.name),
+    a11y: template.a11y,
+  }
+}
+
+function templateScore(template, tokens) {
+  const searchable = [template.name, template.title, template.description, template.category, template.style, ...template.tags].join(' ')
+  return hits(tokens, template.name) * 10 + hits(tokens, template.tags.join(' ')) * 7 +
+    hits(tokens, searchable) * 2 + (template.a11y?.clean === true ? 3 : 0) -
+    (template.a11y?.clean === false ? 1000 : 0)
+}
+
+export async function findTemplateTool({ task, category, style }) {
+  const templates = await allTemplates({ category, style })
+  const tokens = tokenize(task)
+  const ranked = templates.map((template) => ({ template, score: templateScore(template, tokens) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.template.name.localeCompare(b.template.name))
+    .slice(0, 3)
+  if (!ranked.length) {
+    return {
+      text: `No template matched "${task}"${category ? ` in ${category}` : ''}${style ? ` with ${style} style` : ''}. Try broader wording or omit a filter.`,
+      structuredContent: { query: { task, category: category || null, style: style || null }, matches: [] },
+    }
+  }
+  const lines = [`Best complete-template fits for: ${task}`]
+  for (const { template } of ranked) {
+    lines.push(`\n${template.name} [${template.category}${template.style ? ` / ${template.style}` : ''}]`)
+    lines.push(firstSentence(template.description))
+    lines.push(`Preview: ${template.previewUrl}`)
+    lines.push(`Details: ${template.detailUrl}`)
+  }
+  return {
+    text: lines.join('\n'),
+    structuredContent: {
+      query: { task, category: category || null, style: style || null },
+      matches: ranked.map(({ template }) => templateSummary(template)),
+    },
+  }
+}
+
+export async function checkTemplate({ name }) {
+  const template = await findTemplate(name)
+  if (!template) {
+    return {
+      text: `"${name}" is not in the bundled template library. Use find_template to discover a complete starter.`,
+      structuredContent: { query: { name }, template: null },
+    }
+  }
+  const audit = template.a11y?.clean === true ? 'axe audit clean' : template.a11y?.clean === false ? 'accessibility review required' : 'audit pending'
+  return {
+    text: [
+      `${template.name} [${template.category}${template.style ? ` / ${template.style}` : ''}]`,
+      template.description,
+      `Stack: ${template.stack.join(', ')} · License: ${template.license} · ${audit}`,
+      `Preview: ${template.previewUrl}`,
+      `Source: ${template.sourceUrl}`,
+      `Download: ${template.downloadUrl}`,
+    ].join('\n'),
+    structuredContent: { query: { name }, template: templateSummary(template) },
+  }
+}
+
+export async function templatePlan({ name, palette }) {
+  const template = await findTemplate(name)
+  if (!template) {
+    return {
+      text: `"${name}" is not in the bundled template library.`,
+      structuredContent: { query: { name, palette: palette || null }, plan: null },
+    }
+  }
+  const selected = palette ? template.variants.find((variant) => variant.name === String(palette).toLowerCase()) : null
+  const paletteLine = palette
+    ? selected ? `Palette preview: ${selected.previewUrl}` : `Palette "${palette}" is unavailable. Choose: ${template.variants.map((variant) => variant.name).join(', ') || 'no palette variants'}.`
+    : `Palette variants: ${template.variants.map((variant) => variant.name).join(', ') || 'none; use the default design'}.`
+  const lines = [
+    `Template plan for ${template.name}:`,
+    `1. Clone: ${template.cloneCommand}`,
+    '2. Run: npm install && npm run dev',
+    `3. Review the complete page: ${selected?.previewUrl || template.previewUrl}`,
+    `4. Keep attribution notes in TEMPLATE.md and preserve the ${template.license} license.`,
+    paletteLine,
+    `Source: ${template.sourceUrl}`,
+  ]
+  return {
+    text: lines.join('\n'),
+    structuredContent: {
+      query: { name, palette: palette || null },
+      plan: { template: templateSummary(template), selectedPalette: selected || null },
+    },
+  }
+}
+
 const objectOutput = (properties, required) => ({
   type: 'object', properties, required, additionalProperties: false,
 })
@@ -408,6 +514,37 @@ export const TOOLS = [
     outputSchema: objectOutput({ query: { type: 'object' }, entries: summaryArray }, ['query', 'entries']),
     annotations: READ_ONLY,
     handler: skipList,
+  },
+  {
+    name: 'find_template', title: 'Find a complete page template',
+    description: 'Rank up to three complete React page templates for a product or business task. Templates with a failed accessibility audit are excluded from recommendations.',
+    inputSchema: objectOutput({
+      task: { type: 'string', description: 'The site, product, business, or page needed.' },
+      category: { type: 'string', enum: ['base', 'style', 'industry'], description: 'Optional template category.' },
+      style: { type: 'string', description: 'Optional exact style or tag filter.' },
+    }, ['task']),
+    outputSchema: objectOutput({ query: { type: 'object' }, matches: summaryArray }, ['query', 'matches']),
+    annotations: READ_ONLY,
+    handler: findTemplateTool,
+  },
+  {
+    name: 'check_template', title: 'Check one complete template',
+    description: 'Return a template summary, stack, license, accessibility status, preview, source, download, and available palette variants.',
+    inputSchema: objectOutput({ name: { type: 'string', description: 'Exact template name or slug.' } }, ['name']),
+    outputSchema: objectOutput({ query: { type: 'object' }, template: {} }, ['query', 'template']),
+    annotations: READ_ONLY,
+    handler: checkTemplate,
+  },
+  {
+    name: 'template_plan', title: 'Plan template adoption',
+    description: 'Return an exact clone and setup plan for a complete template, optionally selecting one of its built palette variants.',
+    inputSchema: objectOutput({
+      name: { type: 'string', description: 'Exact template name or slug.' },
+      palette: { type: 'string', description: 'Optional built palette variant slug.' },
+    }, ['name']),
+    outputSchema: objectOutput({ query: { type: 'object' }, plan: {} }, ['query', 'plan']),
+    annotations: READ_ONLY,
+    handler: templatePlan,
   },
 ]
 

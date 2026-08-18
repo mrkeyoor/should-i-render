@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { allComponents, allPalettes, countComponents } from '../data.js'
+import { allComponents, allPalettes, allTemplates, countComponents, countTemplates } from '../data.js'
 import { clamp, estimateTokens } from '../clamp.js'
 import { TOOLS, listTools, runTool } from '../tools.js'
 
@@ -16,7 +16,7 @@ test('bundled snapshot contains the full measured index', async () => {
 
 test('all tools expose discovery metadata required by MCP clients', () => {
   const definitions = listTools()
-  assert.equal(definitions.length, 6)
+  assert.equal(definitions.length, 9)
   for (const tool of definitions) {
     assert.ok(tool.title)
     assert.equal(tool.annotations.readOnlyHint, true)
@@ -55,6 +55,9 @@ test('tool functions return structured measured answers', async () => {
     ['install_plan', { name: first.name }],
     ['skip_list', { pattern: failure.pattern }],
     ['palette_pick', { mood: 'light' }],
+    ['find_template', { task: 'healthcare clinic landing page', category: 'industry' }],
+    ['check_template', { name: 'landing-01' }],
+    ['template_plan', { name: 'landing-01', palette: 'paper-coral' }],
   ]
   for (const [name, args] of calls) {
     const result = await runTool(name, args)
@@ -72,6 +75,19 @@ test('find_component never recommends a failed or warning entry as a best fit', 
   assert.ok(result.structuredContent.matches.every((match) => match.measured.renders === true))
   assert.ok(result.structuredContent.matches.every((match) => match.failureWarning === false))
   assert.doesNotMatch(result.text, /✗RENDERS/)
+})
+
+test('bundled template catalog exposes complete public starters and adoption actions', async () => {
+  assert.equal(await countTemplates(), 35)
+  const templates = await allTemplates()
+  assert.equal(templates.length, 35)
+  assert.ok(templates.every((template) => template.previewUrl.startsWith('https://vibecodng.com/templates/')))
+  const found = await runTool('find_template', { task: 'clinic healthcare doctors', category: 'industry' })
+  assert.ok(found.structuredContent.matches.length > 0)
+  assert.ok(found.structuredContent.matches.every((template) => template.a11y?.clean !== false))
+  const plan = await runTool('template_plan', { name: 'landing-01', palette: 'paper-coral' })
+  assert.match(plan.text, /npx degit mrkeyoor\/vibecodng-templates/)
+  assert.equal(plan.structuredContent.plan.selectedPalette.name, 'paper-coral')
 })
 
 test('install_plan gives the agent an actionable review and source path', async () => {
@@ -111,6 +127,9 @@ test('every tool stays inside the 500-token text clamp', async () => {
     install_plan: { name: first.name },
     skip_list: { pattern: failure.pattern },
     palette_pick: { mood: 'retro' },
+    find_template: { task: 'agency landing page', category: 'base' },
+    check_template: { name: 'landing-01' },
+    template_plan: { name: 'landing-01', palette: 'paper-coral' },
   }
   for (const tool of TOOLS) {
     const result = await runTool(tool.name, args[tool.name])

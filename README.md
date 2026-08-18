@@ -1,5 +1,9 @@
 # should-i-render
 
+[![npm version](https://img.shields.io/npm/v/should-i-render.svg)](https://www.npmjs.com/package/should-i-render)
+[![license: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![measured index](https://img.shields.io/badge/measured%20index-vibecodng.com-2c41f0.svg)](https://vibecodng.com/components/)
+
 `should-i-render` is a read-only MCP server for choosing React components from a measured, curated snapshot. It answers component-fit questions with terse verdicts and harness facts instead of returning source dumps.
 
 The bundled snapshot currently contains the published should-i-render index. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
@@ -91,3 +95,9 @@ Set `SHOULD_I_RENDER_DATA=/path/to/components.json` to test another snapshot wit
 ## License
 
 Server code is MIT licensed. The compiled index metadata is CC BY 4.0 with attribution to mrkeyoor.com; individual component source projects retain their own licenses and author credit.
+
+## Contributing
+
+- Found a wrong verdict or stale component record? [Open an issue](https://github.com/mrkeyoor/should-i-render/issues).
+- Code changes are welcome for the MCP server and ranking logic. Keep responses inside the clamp and run `npm test` before opening a pull request.
+- `data/components.json` is generated from the measured vibecodng index, so data corrections should start as an issue rather than a direct edit to the snapshot.

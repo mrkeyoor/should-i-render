@@ -35,7 +35,14 @@
   ],
   "author": "Keyoor (https://mrkeyoor.com/author/keyoor/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkeyoor/should-i-render.git"
+  },
   "homepage": "https://vibecodng.com/#agents",
+  "bugs": {
+    "url": "https://github.com/mrkeyoor/should-i-render/issues"
+  },
   "publishConfig": {
     "access": "public"
   },

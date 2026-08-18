@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T13:04:25.417Z",
-  "count": 51,
-  "variantCount": 235,
+  "generatedAt": "2026-08-18T13:45:20.939Z",
+  "count": 52,
+  "variantCount": 240,
   "categories": {
-    "base": 24,
+    "base": 25,
     "style": 15,
     "industry": 12
   },
@@ -1246,6 +1246,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T12:59:39.842Z"
+      }
+    },
+    {
+      "id": "kinetic-hotel-01",
+      "name": "Kinetic Hotel",
+      "title": "EIRA — House Above the Tide",
+      "description": "--- name: EIRA — Cinematic Hotel category: Travel description: A scroll-directed luxury hotel campaign with an architectural image portal, room collection and interactive reservation enquiry. tags: [hotel, travel, luxury, editorial, cinematic, scroll, booking, hospitality] features: [Scroll choreography, Original AI imagery, Responsive room collection, Reser",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "kinetic",
+        "hotel"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/kinetic-hotel-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/kinetic-hotel-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/kinetic-hotel-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/kinetic-hotel-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-hotel-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T13:42:01.314Z"
       }
     },
     {

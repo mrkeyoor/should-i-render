@@ -7,7 +7,7 @@ import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprot
 import { listTools, runTool } from './tools.js'
 
 const server = new Server(
-  { name: 'should-i-render', version: '0.2.4' },
+  { name: 'should-i-render', version: '0.2.5' },
   { capabilities: { tools: {} } },
 )
 

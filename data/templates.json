@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T10:34:58.746Z",
-  "count": 41,
-  "variantCount": 185,
+  "generatedAt": "2026-08-18T10:59:45.524Z",
+  "count": 47,
+  "variantCount": 215,
   "categories": {
-    "base": 14,
+    "base": 20,
     "style": 15,
     "industry": 12
   },
@@ -369,6 +369,252 @@
       }
     },
     {
+      "id": "booking-scheduler-01",
+      "name": "Booking Scheduler",
+      "title": "Still · Appointment booking",
+      "description": "A polished appointment-booking flow with selectable services, week navigation, available time slots, booking summary, and confirmation state.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "booking",
+        "scheduler"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/booking-scheduler-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/booking-scheduler-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/booking-scheduler-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/booking-scheduler-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/booking-scheduler-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
+      }
+    },
+    {
+      "id": "community-forum-01",
+      "name": "Community Forum",
+      "title": "Commonroom · Community forum",
+      "description": "A friendly community forum with topic filters, discussion search, reactions, bookmarks, member context, and a functional post composer.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "community",
+        "forum"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/community-forum-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/community-forum-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/community-forum-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/community-forum-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/community-forum-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/community-forum-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/community-forum-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/community-forum-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/community-forum-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/community-forum-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
+      }
+    },
+    {
+      "id": "crm-pipeline-01",
+      "name": "Crm Pipeline",
+      "title": "Keystone · Sales CRM pipeline",
+      "description": "A calm, functional CRM with pipeline stages, lead search, opportunity details, activities, owner context, and an add-opportunity workflow.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "crm",
+        "pipeline"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/crm-pipeline-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/crm-pipeline-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/crm-pipeline-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/crm-pipeline-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/crm-pipeline-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
+      }
+    },
+    {
       "id": "docs-01",
       "name": "Docs",
       "title": "Gridnote Docs - Ship Knowledge in Sync",
@@ -508,6 +754,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T10:33:07.752Z"
+      }
+    },
+    {
+      "id": "finance-dashboard-01",
+      "name": "Finance Dashboard",
+      "title": "Ledgerline · Business finance dashboard",
+      "description": "A business banking dashboard with account switching, cash-flow visualization, searchable transactions, budget insights, and a working transfer flow.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "finance",
+        "dashboard"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/finance-dashboard-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/finance-dashboard-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/finance-dashboard-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/finance-dashboard-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/finance-dashboard-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
       }
     },
     {
@@ -867,6 +1195,88 @@
       }
     },
     {
+      "id": "project-board-01",
+      "name": "Project Board",
+      "title": "Orbit · Collaborative project board",
+      "description": "A responsive project workspace with filterable Kanban lanes, movable tasks, progress metrics, team context, and a working task composer.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "project",
+        "board"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/project-board-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/project-board-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/project-board-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/project-board-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/project-board-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/project-board-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/project-board-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/project-board-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/project-board-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/project-board-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
+      }
+    },
+    {
       "id": "saas-dashboard-01",
       "name": "Saas Dashboard",
       "title": "Northstar · SaaS operations dashboard",
@@ -946,6 +1356,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T10:30:16.328Z"
+      }
+    },
+    {
+      "id": "support-desk-01",
+      "name": "Support Desk",
+      "title": "Relay · Customer support desk",
+      "description": "A focused support inbox with ticket filters, searchable conversations, customer context, reply composer, priority states, and resolution actions.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "support",
+        "desk"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/support-desk-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/support-desk-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/support-desk-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/support-desk-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/support-desk-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/support-desk-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/support-desk-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/support-desk-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/support-desk-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/support-desk-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-18T10:58:17.041Z"
       }
     },
     {

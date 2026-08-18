@@ -1,6 +1,6 @@
 {
   "name": "should-i-render",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A measured React component fit index for coding agents, served as a bundled-data MCP server.",
   "type": "module",
   "main": "server.js",

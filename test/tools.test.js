@@ -78,9 +78,9 @@ test('find_component never recommends a failed or warning entry as a best fit', 
 })
 
 test('bundled template catalog exposes complete public starters and adoption actions', async () => {
-  assert.equal(await countTemplates(), 41)
+  assert.equal(await countTemplates(), 47)
   const templates = await allTemplates()
-  assert.equal(templates.length, 41)
+  assert.equal(templates.length, 47)
   assert.ok(templates.every((template) => template.previewUrl.startsWith('https://vibecodng.com/templates/')))
   const found = await runTool('find_template', { task: 'clinic healthcare doctors', category: 'industry' })
   assert.ok(found.structuredContent.matches.length > 0)

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T13:45:20.939Z",
-  "count": 52,
-  "variantCount": 240,
+  "generatedAt": "2026-08-22T13:16:02.889Z",
+  "count": 91,
+  "variantCount": 435,
   "categories": {
-    "base": 25,
+    "base": 64,
     "style": 15,
     "industry": 12
   },
@@ -287,6 +287,88 @@
       }
     },
     {
+      "id": "architecture-studio-01",
+      "name": "Architecture Studio",
+      "title": "FORMA — Mass Meets Light",
+      "description": "--- name: FORMA — Architecture Practice category: Architecture description: A rigorous editorial architecture portfolio with a spatial panoramic scroll sequence, interactive project index, practice metrics, and commission enquiry. tags: [architecture, portfolio, editorial, brutalist, studio, projects, scroll] features: [Spatial scroll story, Original AI imag",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "architecture",
+        "studio"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/architecture-studio-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/architecture-studio-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/architecture-studio-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/architecture-studio-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/architecture-studio-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
+      }
+    },
+    {
       "id": "blog-magazine-01",
       "name": "Blog Magazine",
       "title": "Relay Review · Independent culture magazine",
@@ -451,6 +533,253 @@
       }
     },
     {
+      "id": "cinematic-music-artist-01",
+      "name": "Cinematic Music Artist",
+      "title": "MARA/0 — Afterimage",
+      "description": "An original cinematic electronic-artist template with a generative Web Audio player, scroll-composed album world, interactive tracklist, filtered tour dates, ticket reservation, collector-edition configurator, cart drawer, newsletter and accessible overlays.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "cinematic",
+        "music",
+        "artist"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/cinematic-music-artist-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/cinematic-music-artist-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/cinematic-music-artist-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/cinematic-music-artist-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-music-artist-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T12:33:49.092Z"
+      }
+    },
+    {
+      "id": "cinematic-resort-01",
+      "name": "Cinematic Resort",
+      "title": "SORA — Beyond the Tide, Silence",
+      "description": "--- name: SORA — Private Island Retreat category: Hospitality description: A cinematic private-island resort with a three-chapter panoramic scroll journey, residence explorer, detailed hospitality metrics, and complete reservation enquiry. tags: [resort, hospitality, luxury, wellness, cinematic, scroll, booking, editorial] features: [Panoramic scroll story, ",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "cinematic",
+        "resort"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/cinematic-resort-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/cinematic-resort-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/cinematic-resort-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/cinematic-resort-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-resort-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
+      }
+    },
+    {
+      "id": "cinematic-restaurant-01",
+      "name": "Cinematic Restaurant",
+      "title": "ORA — Fire, Coast, Season",
+      "description": "--- name: ORA — Cinematic Restaurant category: Food description: A scroll-directed fine-dining story with original culinary imagery, nightly menu and a complete table reservation interaction. tags: [restaurant, fine-dining, food, editorial, cinematic, scroll, reservation] features: [Scroll choreography, Original AI imagery, Nightly menu, Reservation drawer, ",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "cinematic",
+        "restaurant"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/cinematic-restaurant-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/cinematic-restaurant-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/cinematic-restaurant-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/cinematic-restaurant-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/cinematic-restaurant-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T05:27:13.607Z"
+      }
+    },
+    {
       "id": "community-forum-01",
       "name": "Community Forum",
       "title": "Commonroom · Community forum",
@@ -533,6 +862,171 @@
       }
     },
     {
+      "id": "couture-fashion-runway-01",
+      "name": "Couture Fashion Runway",
+      "title": "Maison Fold — Pattern to Silhouette",
+      "description": "An original couture template built around a pattern table that stitches. Scroll or explicit controls move four flat pattern pieces onto a dress form and resolve them into a finished silhouette. Runway timing, textile drape, seam mapping, look composition and a private fitting dossier continue the construction grammar.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "couture",
+        "fashion",
+        "runway"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/couture-fashion-runway-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/couture-fashion-runway-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/couture-fashion-runway-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/couture-fashion-runway-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/couture-fashion-runway-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T11:56:41.541Z"
+      }
+    },
+    {
+      "id": "creative-agency-01",
+      "name": "Creative Agency",
+      "title": "OFF/GRID — Make It Impossible to Ignore",
+      "description": "--- name: OFF/GRID — Creative Company category: Agency description: A bold kinetic creative-agency portfolio with transformed typography, panoramic campaign motion, case-study selector, metrics, and project brief flow. tags: [agency, creative, portfolio, kinetic, campaign, bold, studio] features: [Kinetic scroll story, Original AI imagery, Case-study selecto",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "creative",
+        "agency"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/creative-agency-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/creative-agency-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/creative-agency-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/creative-agency-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/creative-agency-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/creative-agency-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/creative-agency-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/creative-agency-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/creative-agency-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/creative-agency-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
+      }
+    },
+    {
       "id": "crm-pipeline-01",
       "name": "Crm Pipeline",
       "title": "Keystone · Sales CRM pipeline",
@@ -612,6 +1106,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T11:33:57.613Z"
+      }
+    },
+    {
+      "id": "design-furniture-01",
+      "name": "Design Furniture",
+      "title": "Vellum Objects — Furniture Editions",
+      "description": "A measured collectible-furniture commerce template with a real-time Three.js room composer, numbered object ledger, material junction study, edition provenance, and inline reservation record.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "design",
+        "furniture"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/design-furniture-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/design-furniture-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/design-furniture-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/design-furniture-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/design-furniture-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/design-furniture-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/design-furniture-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/design-furniture-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/design-furniture-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/design-furniture-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T08:34:04.203Z"
       }
     },
     {
@@ -757,6 +1333,171 @@
       }
     },
     {
+      "id": "editorial-creative-studio-02",
+      "name": "Editorial Creative Studio",
+      "title": "MOTIF — Make room for the unexpected",
+      "description": "An original cinematic editorial creative-office template with an expanding scroll portal, animated studio reel, staggered campaign worlds, service system, pricing modes, testimonial stack, FAQ, and booking drawer.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "editorial",
+        "creative",
+        "studio"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/",
+      "detailUrl": "https://vibecodng.com/templates/library/editorial-creative-studio-02/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/editorial-creative-studio-02",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/editorial-creative-studio-02.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/editorial-creative-studio-02 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-creative-studio-02/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T08:43:42.355Z"
+      }
+    },
+    {
+      "id": "editorial-fashion-01",
+      "name": "Editorial Fashion",
+      "title": "NOMA — Form in Motion",
+      "description": "--- name: NOMA — Fashion in Motion category: Ecommerce description: A cinematic fashion editorial with scroll choreography, horizontal lookbook and a complete quick-shop sizing flow. tags: [fashion, ecommerce, editorial, luxury, cinematic, scroll, lookbook, shop] features: [Scroll-directed campaign, Original AI imagery, Horizontal lookbook, Product selection",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "editorial",
+        "fashion"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/editorial-fashion-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/editorial-fashion-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/editorial-fashion-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/editorial-fashion-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fashion-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T05:35:31.760Z"
+      }
+    },
+    {
       "id": "editorial-fragrance-01",
       "name": "Editorial Fragrance",
       "title": "AUREL — Parfums de matière",
@@ -836,6 +1577,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T12:15:42.948Z"
+      }
+    },
+    {
+      "id": "editorial-fragrance-02",
+      "name": "Editorial Fragrance",
+      "title": "VAPOR Nº7 — Skin After the Storm",
+      "description": "--- name: VAPOR Nº7 — Fragrance Campaign category: Beauty description: An avant-garde fragrance launch with a three-state olfactive scroll narrative, product object selector, edition facts, and private allocation flow. tags: [fragrance, beauty, luxury, editorial, product, campaign, ecommerce] features: [Olfactive scroll story, Original AI imagery, Product se",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "editorial",
+        "fragrance"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/",
+      "detailUrl": "https://vibecodng.com/templates/library/editorial-fragrance-02/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/editorial-fragrance-02",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/editorial-fragrance-02.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/editorial-fragrance-02 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/editorial-fragrance-02/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
       }
     },
     {
@@ -1003,6 +1826,255 @@
       }
     },
     {
+      "id": "eyewear-prism-lab-01",
+      "name": "Eyewear Prism Lab",
+      "title": "PRISM — See Both Sides",
+      "description": "An original optical-fashion campaign built around a live spectrum lab, frame geometry, tint transmission and a fictional fitted-view outcome.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "eyewear",
+        "prism",
+        "lab"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/eyewear-prism-lab-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/eyewear-prism-lab-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/eyewear-prism-lab-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/eyewear-prism-lab-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/eyewear-prism-lab-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T13:50:39.347Z"
+      }
+    },
+    {
+      "id": "fashion-contact-sheet-01",
+      "name": "Fashion Contact Sheet",
+      "title": "RIFT — Developed in Motion",
+      "description": "An original cinematic React/Vite template for a fictional experimental ready-to-wear label. Its signature contact sheet develops from a darkroom exposure into a stateful styling docket and numbered, size-specific claim tag.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "fashion",
+        "contact",
+        "sheet"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/fashion-contact-sheet-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/fashion-contact-sheet-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/fashion-contact-sheet-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/fashion-contact-sheet-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/fashion-contact-sheet-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T09:06:57.920Z"
+      }
+    },
+    {
+      "id": "film-vfx-studio-01",
+      "name": "Film Vfx Studio",
+      "title": "Cutline Assembly — Film &amp; VFX Studio",
+      "description": "An original full-page template for an independent direction, production and visual-effects studio. Its core metaphor is a cut that assembles: visitors move through a working reel, inspect a practical-to-final VFX breakdown, and turn project choices into a concise treatment before contacting production.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "film",
+        "vfx",
+        "studio"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/film-vfx-studio-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/film-vfx-studio-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/film-vfx-studio-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/film-vfx-studio-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/film-vfx-studio-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T09:24:51.478Z"
+      }
+    },
+    {
       "id": "finance-dashboard-01",
       "name": "Finance Dashboard",
       "title": "Ledgerline · Business finance dashboard",
@@ -1082,6 +2154,419 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T11:33:57.613Z"
+      }
+    },
+    {
+      "id": "futuristic-villa-01",
+      "name": "Futuristic Villa",
+      "title": "Casa Nadir — Sectional Residence",
+      "description": "An original future-villa template designed as a sectional promenade. A demand-rendered 3D house travels through arrival, living void, water court and roof coordinates by bounded scroll or explicit controls. Daylight is a working spatial input, not decorative ambience.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "futuristic",
+        "villa"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/futuristic-villa-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/futuristic-villa-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/futuristic-villa-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/futuristic-villa-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/futuristic-villa-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T11:56:00.762Z"
+      }
+    },
+    {
+      "id": "headphones-spatial-sound-01",
+      "name": "Headphones Spatial Sound",
+      "title": "SONORA — Sound Has a Position",
+      "description": "An original premium-headphone campaign centered on a silent but functional spatial soundfield instrument. Room, stage width and sonic focus reposition sources, redraw the orbital radar and update acoustic readouts before resolving into a fictional listening passport.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "headphones",
+        "spatial",
+        "sound"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/headphones-spatial-sound-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/headphones-spatial-sound-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/headphones-spatial-sound-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/headphones-spatial-sound-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/headphones-spatial-sound-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T13:51:04.402Z"
+      }
+    },
+    {
+      "id": "humanoid-robotics-lab-01",
+      "name": "Humanoid Robotics Lab",
+      "title": "Axiom Fieldworks — Humanoid Commissioning Lab",
+      "description": "A cinematic React/Vite brand template for a fictional embodied-autonomy company. Its signature movement score lets visitors wake a humanoid body, direct it through four physical cues, inspect its sense field, and tear off a first-shift ticket.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "humanoid",
+        "robotics",
+        "lab"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/humanoid-robotics-lab-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/humanoid-robotics-lab-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/humanoid-robotics-lab-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/humanoid-robotics-lab-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/humanoid-robotics-lab-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T08:30:41.225Z"
+      }
+    },
+    {
+      "id": "interior-studio-01",
+      "name": "Interior Studio",
+      "title": "MORA — Rooms for a Slower Life",
+      "description": "--- name: MORA — Interior Studio category: Interiors description: A warm, quiet interior-design portfolio with an architectural room sequence, material-rich project selector, studio method, and private consultation flow. tags: [interiors, design, studio, editorial, warm, portfolio, residential] features: [Room-sequence scroll story, Original AI imagery, Inte",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "interior",
+        "studio"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/interior-studio-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/interior-studio-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/interior-studio-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/interior-studio-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/interior-studio-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/interior-studio-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/interior-studio-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/interior-studio-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/interior-studio-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/interior-studio-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
+      }
+    },
+    {
+      "id": "jewelry-light-atelier-01",
+      "name": "Jewelry Light Atelier",
+      "title": "LUCENT — Turn the Light",
+      "description": "An original contemporary-jewelry campaign centered on a functional light table. Metal, stone and environment change a loupe-scale ring, beam, reflection bloom and optical readout before resolving into a fictional gem-paper study.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "jewelry",
+        "light",
+        "atelier"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/jewelry-light-atelier-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/jewelry-light-atelier-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/jewelry-light-atelier-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/jewelry-light-atelier-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/jewelry-light-atelier-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T13:51:30.159Z"
       }
     },
     {
@@ -1167,6 +2652,88 @@
       }
     },
     {
+      "id": "kinetic-automotive-01",
+      "name": "Kinetic Automotive",
+      "title": "AERON — The Grand Tourer, Recast",
+      "description": "--- name: AERON — Kinetic Grand Tourer category: Automotive description: A cinematic concept-car campaign with a scroll-directed three-scene film, interactive exterior atelier, performance specifications, and test-drive request drawer. tags: [automotive, electric, luxury, editorial, cinematic, scroll, configurator, concept-car] features: [Scroll choreography",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "kinetic",
+        "automotive"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/kinetic-automotive-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/kinetic-automotive-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/kinetic-automotive-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/kinetic-automotive-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-automotive-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T05:27:13.607Z"
+      }
+    },
+    {
       "id": "kinetic-beverage-01",
       "name": "Kinetic Beverage",
       "title": "PULSE — Botanical Soda",
@@ -1249,6 +2816,89 @@
       }
     },
     {
+      "id": "kinetic-digital-agency-01",
+      "name": "Kinetic Digital Agency",
+      "title": "PRIMARY/3 — Don't Fit the Feed",
+      "description": "--- name: PRIMARY/3 — Cinematic Digital Agency category: Agency description: An original red, blue, and yellow digital-marketing experience with a 420vh scroll-scrubbed signal engine, crossfading campaign worlds, interactive case studies, live campaign projection lab, capabilities system, and complete project brief. tags: [digital-marketing, agency, cinemati",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "kinetic",
+        "digital",
+        "agency"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/kinetic-digital-agency-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/kinetic-digital-agency-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/kinetic-digital-agency-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/kinetic-digital-agency-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-digital-agency-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T07:22:32.232Z"
+      }
+    },
+    {
       "id": "kinetic-hotel-01",
       "name": "Kinetic Hotel",
       "title": "EIRA — House Above the Tide",
@@ -1328,6 +2978,172 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T13:42:01.314Z"
+      }
+    },
+    {
+      "id": "kinetic-real-estate-01",
+      "name": "Kinetic Real Estate",
+      "title": "ORRA House — Canyon Residence",
+      "description": "A cinematic luxury real-estate presentation for a fictional residence carved into a desert escarpment.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "kinetic",
+        "real",
+        "estate"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/kinetic-real-estate-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/kinetic-real-estate-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/kinetic-real-estate-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/kinetic-real-estate-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-real-estate-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T05:27:13.607Z"
+      }
+    },
+    {
+      "id": "kinetic-tech-launch-01",
+      "name": "Kinetic Tech Launch",
+      "title": "LUMA ONE — Less Screen, More World",
+      "description": "--- name: LUMA ONE — Spatial Product Launch category: Technology description: A cinematic technology launch with an exploded spatial-device story, edition configurator, technical facts, and first-edition signup flow. tags: [technology, product, launch, hardware, spatial, cinematic, configurator] features: [Exploded scroll story, Original AI imagery, Edition ",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "kinetic",
+        "tech",
+        "launch"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/kinetic-tech-launch-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/kinetic-tech-launch-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/kinetic-tech-launch-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/kinetic-tech-launch-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/kinetic-tech-launch-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
       }
     },
     {
@@ -1494,6 +3310,501 @@
       }
     },
     {
+      "id": "longevity-clinic-01",
+      "name": "Longevity Clinic",
+      "title": "North / Now — Healthspan Institute",
+      "description": "An original physician-led healthspan template built as a clinical care-file system. Desktop uses a simultaneous triage board, contextual evidence ledger, care-pathway matrix, 90-day cadence and inline consultation handover. Mobile is purpose-built as a progressive four-question “pocket care passport” rather than a collapsed desktop page.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "longevity",
+        "clinic"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/longevity-clinic-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/longevity-clinic-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/longevity-clinic-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/longevity-clinic-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/longevity-clinic-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T11:49:08.519Z"
+      }
+    },
+    {
+      "id": "luxury-fragrance-house-01",
+      "name": "Luxury Fragrance House",
+      "title": "Orris Null — Olfactive Chamber",
+      "description": "An original fragrance-house template built as a formula that distils. A demand-rendered optical-glass vessel moves from raw headspace to concentrate and sealed extrait; ingredient selection reorganises the visible formula, and atomisation is a short user-triggered event rather than a loop.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "luxury",
+        "fragrance",
+        "house"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/luxury-fragrance-house-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/luxury-fragrance-house-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/luxury-fragrance-house-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/luxury-fragrance-house-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-fragrance-house-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T11:56:14.545Z"
+      }
+    },
+    {
+      "id": "luxury-jewelry-01",
+      "name": "Luxury Jewelry",
+      "title": "SEREIN — Objects held in tension",
+      "description": "An original cinematic high-jewelry template with a scroll-composed hero, filterable collection, metal/gem/size configurator, wishlist, cart, private appointment booking, story and newsletter flows.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "luxury",
+        "jewelry"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/luxury-jewelry-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/luxury-jewelry-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/luxury-jewelry-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/luxury-jewelry-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-jewelry-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T12:47:22.903Z"
+      }
+    },
+    {
+      "id": "luxury-luggage-route-01",
+      "name": "Luxury Luggage Route",
+      "title": "MERIDIAN — Pack the Route",
+      "description": "An original luxury-luggage campaign where destination, trip rhythm and duration redraw a schematic itinerary and repack a transparent case cross-section. The result resolves to a fictional perforated boarding folio.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "luxury",
+        "luggage",
+        "route"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/luxury-luggage-route-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/luxury-luggage-route-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/luxury-luggage-route-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/luxury-luggage-route-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-luggage-route-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T13:51:17.595Z"
+      }
+    },
+    {
+      "id": "luxury-watch-01",
+      "name": "Luxury Watch",
+      "title": "VANTA — Time, Reconstructed",
+      "description": "--- name: VANTA — Luxury Watch category: Commerce description: A cinematic independent watch campaign with movement storytelling, material editions and a private-allocation configurator. tags: [watch, luxury, product, horology, cinematic, scroll, configurator] features: [Scroll choreography, Original AI imagery, Material editions, Allocation drawer, Responsi",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "luxury",
+        "watch"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/luxury-watch-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/luxury-watch-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/luxury-watch-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/luxury-watch-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T05:27:13.607Z"
+      }
+    },
+    {
+      "id": "luxury-watch-atelier-01",
+      "name": "Luxury Watch Atelier",
+      "title": "Aster Vale — Calibre Atelier",
+      "description": "An original haute-horlogerie template built as a calibre bench that opens. Its flagship is a code-native 3D mechanical movement: scroll or explicit controls separate the case, gear train, bridges, dial and hands along their assembly axis; the crown changes the displayed mechanical state.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "luxury",
+        "watch",
+        "atelier"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/luxury-watch-atelier-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/luxury-watch-atelier-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/luxury-watch-atelier-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/luxury-watch-atelier-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/luxury-watch-atelier-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T11:55:46.797Z"
+      }
+    },
+    {
       "id": "marketplace-01",
       "name": "Marketplace",
       "title": "Foundry Market · Independent objects marketplace",
@@ -1575,6 +3886,335 @@
       }
     },
     {
+      "id": "motorsport-team-01",
+      "name": "Motorsport Team",
+      "title": "APEX WORKS — The pit wall calls",
+      "description": "An original elite motorsport template built as a pit wall that calls strategy. The hero behaves like a race broadcast command surface rather than a car configurator. The flagship interaction models tyre compound, pit lap, weather and traffic into an explained fictional strategy outcome.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "motorsport",
+        "team"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/motorsport-team-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/motorsport-team-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/motorsport-team-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/motorsport-team-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/motorsport-team-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T09:25:19.818Z"
+      }
+    },
+    {
+      "id": "museum-exhibition-01",
+      "name": "Museum Exhibition",
+      "title": "ELSEWHERE — Museum of Contemporary Form",
+      "description": "An original cinematic museum template with a scroll-composed exhibition hero, current/upcoming/archive filters, programme schedule, date-based ticket reservation, membership flow, and working contrast/type/motion accessibility controls.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "museum",
+        "exhibition"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/museum-exhibition-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/museum-exhibition-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/museum-exhibition-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/museum-exhibition-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/museum-exhibition-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T13:18:21.665Z"
+      }
+    },
+    {
+      "id": "performance-footwear-01",
+      "name": "Performance Footwear",
+      "title": "VECTOR 01 — Performance, calibrated",
+      "description": "An original performance-running template built as a force chassis that separates. Its signature interaction is a real-time Three.js shoe assembly: visitors rotate the model, split its upper, carrier and outsole, and move it through touchdown, midstance and toe-off before resolving terrain, strike and ride inputs into a transparent edition recommendation.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "performance",
+        "footwear"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/performance-footwear-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/performance-footwear-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/performance-footwear-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/performance-footwear-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/performance-footwear-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T08:34:04.203Z"
+      }
+    },
+    {
+      "id": "perfume-sillage-composer-01",
+      "name": "Perfume Sillage Composer",
+      "title": "SILLAGE — Compose the Air",
+      "description": "An original fine-fragrance campaign organized around top, heart and base note evolution rather than a product grid.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "perfume",
+        "sillage",
+        "composer"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/perfume-sillage-composer-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/perfume-sillage-composer-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/perfume-sillage-composer-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/perfume-sillage-composer-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/perfume-sillage-composer-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T13:50:52.038Z"
+      }
+    },
+    {
       "id": "portfolio-01",
       "name": "Portfolio",
       "title": "Mira Vale - Independent Designer",
@@ -1602,6 +4242,88 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T09:43:32.921Z"
+      }
+    },
+    {
+      "id": "private-aviation-01",
+      "name": "Private Aviation",
+      "title": "Northline Aviation — Private Charter Dispatch",
+      "description": "An original private-aviation template shaped as a flight dossier that clears. Rather than browsing destination cards, visitors build a real route profile and receive an illustrative aircraft recommendation, operating context and enquiry-ready boarding wallet.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "private",
+        "aviation"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/private-aviation-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/private-aviation-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/private-aviation-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/private-aviation-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/private-aviation-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/private-aviation-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/private-aviation-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/private-aviation-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/private-aviation-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/private-aviation-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T09:25:05.656Z"
       }
     },
     {
@@ -1769,6 +4491,255 @@
       }
     },
     {
+      "id": "sneaker-motion-court-01",
+      "name": "Sneaker Motion Court",
+      "title": "AIRPLAY — Every Step Starts Something",
+      "description": "An original cinematic lifestyle sneaker template built around a city route that laces itself. Desktop uses a diagonal triple-exposure crossing and oversized lace map; mobile becomes a thumb-led sneaker-box unboxing and focused route flow.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "sneaker",
+        "motion",
+        "court"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/sneaker-motion-court-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/sneaker-motion-court-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/sneaker-motion-court-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/sneaker-motion-court-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/sneaker-motion-court-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T10:40:16.272Z"
+      }
+    },
+    {
+      "id": "space-technology-mission-01",
+      "name": "Space Technology Mission",
+      "title": "Aperture Orbital — Mission Sequence",
+      "description": "An original commercial-space template built around a mission that deploys. A demand-rendered spacecraft advances from ignition through separation and solar-array deployment to an imaging pass, using bounded scroll or explicit event controls. Coverage, payload bus, ground network and concept uplink continue the operational grammar.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "space",
+        "technology",
+        "mission"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/space-technology-mission-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/space-technology-mission-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/space-technology-mission-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/space-technology-mission-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/space-technology-mission-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-20T11:56:27.763Z"
+      }
+    },
+    {
+      "id": "streetwear-block-party-01",
+      "name": "Streetwear Block Party",
+      "title": "LOUDER — The Block Is Ours",
+      "description": "An original image-led streetwear T-shirt template built around a cheerful block-party campaign and a three-person crew mixer. Desktop behaves like a wide sound-system stage; mobile becomes a one-hand festival crew-pass story.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "streetwear",
+        "block",
+        "party"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/streetwear-block-party-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/streetwear-block-party-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/streetwear-block-party-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/streetwear-block-party-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/streetwear-block-party-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-21T09:51:32.721Z"
+      }
+    },
+    {
       "id": "support-desk-01",
       "name": "Support Desk",
       "title": "Relay · Customer support desk",
@@ -1848,6 +4819,254 @@
         "violations": 0,
         "nodes": 0,
         "auditedAt": "2026-08-18T11:33:57.613Z"
+      }
+    },
+    {
+      "id": "travel-expedition-01",
+      "name": "Travel Expedition",
+      "title": "NORTH/0 — Where Maps Thin Out",
+      "description": "--- name: NORTH/0 — Expedition Company category: Travel description: A cinematic small-group expedition platform with terrain-driven scroll storytelling, route comparison, field standards, and complete expedition enquiry. tags: [travel, expedition, outdoor, adventure, cinematic, routes, booking] features: [Terrain scroll story, Original AI imagery, Route sel",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "travel",
+        "expedition"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/travel-expedition-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/travel-expedition-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/travel-expedition-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/travel-expedition-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/travel-expedition-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T06:29:52.467Z"
+      }
+    },
+    {
+      "id": "venture-capital-fund-01",
+      "name": "Venture Capital Fund",
+      "title": "Matter & Means — Venture Partners",
+      "description": "An original cinematic venture-capital template with a scroll-composed hero, interactive investment thesis, filterable portfolio, two-step founder introduction, LP memo request, field notes, and five palette builds.",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "venture",
+        "capital",
+        "fund"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/venture-capital-fund-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/venture-capital-fund-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/venture-capital-fund-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/venture-capital-fund-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/venture-capital-fund-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-19T13:45:28.971Z"
+      }
+    },
+    {
+      "id": "wordpress-product-foundry-01",
+      "name": "Wordpress Product Foundry",
+      "title": "BLOCK/CTRL — WordPress Product Foundry",
+      "description": "--- name: BLOCK/CTRL — WordPress Product Foundry category: Technology description: A cinematic product studio for showcasing WordPress block themes and plugins, with live theme specimens, a compatibility signal board, interactive stack compiler, and complete build-manifest flow. tags: [wordpress, themes, plugins, product-studio, block-theme, ecommerce, compa",
+      "category": "base",
+      "style": null,
+      "tags": [
+        "base",
+        "wordpress",
+        "product",
+        "foundry"
+      ],
+      "license": "MIT",
+      "stack": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS 4"
+      ],
+      "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/",
+      "detailUrl": "https://vibecodng.com/templates/library/wordpress-product-foundry-01/",
+      "sourceUrl": "https://github.com/mrkeyoor/vibecodng-templates/tree/main/templates/wordpress-product-foundry-01",
+      "downloadUrl": "https://vibecodng.com/templates/downloads/wordpress-product-foundry-01.tar.gz",
+      "cloneCommand": "npx degit mrkeyoor/vibecodng-templates/templates/wordpress-product-foundry-01 my-site",
+      "variants": [
+        {
+          "name": "aurora-terminal",
+          "colors": {
+            "accent": "#58F5B5",
+            "surface": "#08120F",
+            "text": "#E8FFF4",
+            "muted": "#88A99C"
+          },
+          "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/p/aurora-terminal/"
+        },
+        {
+          "name": "midnight-lilac",
+          "colors": {
+            "accent": "#A88BFF",
+            "surface": "#111027",
+            "text": "#F4F1FF",
+            "muted": "#9C98BC"
+          },
+          "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/p/midnight-lilac/"
+        },
+        {
+          "name": "arcade-sunset",
+          "colors": {
+            "accent": "#FF4F9A",
+            "surface": "#1B1230",
+            "text": "#FFF3D6",
+            "muted": "#B8A1C9"
+          },
+          "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/p/arcade-sunset/"
+        },
+        {
+          "name": "canyon-dusk",
+          "colors": {
+            "accent": "#E88657",
+            "surface": "#2A1814",
+            "text": "#FFF0E6",
+            "muted": "#C0A094"
+          },
+          "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/p/canyon-dusk/"
+        },
+        {
+          "name": "paper-coral",
+          "colors": {
+            "accent": "#E85D4A",
+            "surface": "#FFF7F1",
+            "text": "#34231F",
+            "muted": "#775F57"
+          },
+          "previewUrl": "https://vibecodng.com/templates/wordpress-product-foundry-01/p/paper-coral/"
+        }
+      ],
+      "a11y": {
+        "clean": true,
+        "violations": 0,
+        "nodes": 0,
+        "auditedAt": "2026-08-22T13:15:47.809Z"
       }
     },
     {

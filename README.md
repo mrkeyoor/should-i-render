@@ -6,7 +6,7 @@
 
 `should-i-render` is a read-only MCP server for choosing measured React components and complete vibecodng page templates from a curated snapshot. It answers fit questions with terse verdicts and practical adoption facts instead of returning source dumps.
 
-The bundled snapshot currently contains the published should-i-render index. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
+The bundled snapshot currently contains the published should-i-render index, including 91 complete page templates and 435 palette variants. It runs over stdio, needs no API key, database, or network access, and clamps every text response to approximately 500 tokens.
 
 The hosted free beta at [vibecodng.com](https://vibecodng.com/#agents) reads the live index and includes 100 tool calls per API key per UTC day. Create a key in the browser, then connect an HTTP-capable MCP client to `https://vibecodng.com/mcp`. Use this npm package when you want a private, offline, versioned snapshot with no quota.
 
@@ -32,7 +32,7 @@ With npm, no checkout is needed:
   "mcpServers": {
     "should-i-render": {
       "command": "npx",
-      "args": ["-y", "should-i-render@0.2.5"]
+      "args": ["-y", "should-i-render@0.2.6"]
     }
   }
 }
